@@ -12,20 +12,16 @@
     <section id="title">
         <h1>My Weather App</h1>
     </section>
-    <section id="weather">
-        <div class="weather-container">
-            <div class="weather-city">
-                <h2>City:</h2>
-                <h2>Country:</h2>
-            </div>
-            <div class="weather-temperature">
-                <h2>Temperature:</h2>
-            </div>
-        </div>
-        <div class="search">
-            <input type="text">
+    <section id="weather">  
+        <div class="search-box">
+            <input type="text" placeholder="Enter city here..." id="search-bar">
             <button type="button" class="btn" onclick=callWeather()>Search</button>
         </div>
+            <div class="weather-box">
+                <h2 class="weather-location"></h2>
+                <div class="weather-temperature"></div>
+                <div class="weather-description"></div>
+            </div>
     </section>
 </body>
 </html>
