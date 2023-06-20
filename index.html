@@ -7,6 +7,7 @@
     <title>My Weather App</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="title">
@@ -17,11 +18,28 @@
             <input type="text" placeholder="Enter city here..." id="search-bar">
             <button type="button" class="btn" onclick=callWeather()>Search</button>
         </div>
-            <div class="weather-box">
-                <h2 class="weather-location"></h2>
-                <div class="weather-temperature"></div>
-                <div class="weather-description"></div>
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
             </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 </body>
 </html>
