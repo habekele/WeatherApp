@@ -2,6 +2,7 @@ let weather;
 let description;
 let wind;
 let humidity;
+let arr;
 var APIKey = "e95e68d847cae52c53bf55dcca4d43b4"
 
 function callWeather(){
@@ -10,11 +11,16 @@ function callWeather(){
     .then((response) => response.json())
     .then((data) => 
     {
-        console.log(data);
-        weather = ((data.main.temp) * 9/5) + 32;
-        description = data.weather[0].description;
-        humidity = data.main.humidity;
-        wind = data.wind.speed;
+        
+        arr = (Object.entries(data));
+        console.log(arr);
+        var cel = (arr[3][1].temp);
+        weather = Math.floor((cel * 9/5) + 32);
+
+        description = arr[1][1][0].description;
+        humidity = arr[3][1].humidity;
+        wind = arr[5][1].speed;
+
         document.querySelector(".temperature").innerHTML = weather;
         document.querySelector(".description").innerHTML = description;
         document.querySelector(".humidity").lastElementChild.lastElementChild.innerHTML = "Humidity: "+humidity;
