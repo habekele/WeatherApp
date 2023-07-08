@@ -20,8 +20,10 @@ function ChangeWeather(data){
 
         weatherIcon(description);
         document.querySelector(".city").innerHTML = city+", "+country;
+        document.querySelector(".city").className = "city text-center text-3xl text-gray-100 p-2";
         document.querySelector(".temperature").innerHTML = weather+"ºF";
         document.querySelector(".description").innerHTML = description;
+        document.querySelector(".temperature").className = "temperature text-center text-3xl text-gray-100 p-2";
         document.querySelector(".humidity").lastElementChild.innerHTML = "Humidity: "+humidity+"%";
         document.querySelector(".wind").lastElementChild.innerHTML = "Wind Speed: "+wind+" mph";
         document.querySelector("#search-bar").value = "";
