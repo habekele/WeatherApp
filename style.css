@@ -1,0 +1,25 @@
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkolivegreen;
+}
+
+#weather{
+    width: 300px;
+    text-align: center;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 15px;
+}
+ p.temperature {
+    font-size: 50px;
+}
+
+p.description{
+    font-size: xx-large;
+}
+
+.text > p{
+    font-size: x-large;
+} */

@@ -23,8 +23,8 @@ function callWeather(){
 
         document.querySelector(".temperature").innerHTML = weather;
         document.querySelector(".description").innerHTML = description;
-        document.querySelector(".humidity").lastElementChild.lastElementChild.innerHTML = "Humidity: "+humidity;
-        document.querySelector(".wind").lastElementChild.lastElementChild.innerHTML = "Wind Speed: "+wind;
+        document.querySelector(".humidity").lastElementChild.innerHTML = "Humidity: "+humidity+"%";
+        document.querySelector(".wind").lastElementChild.innerHTML = "Wind Speed: "+wind+" mph";
 
     });
 
